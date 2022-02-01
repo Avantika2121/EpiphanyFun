@@ -9,6 +9,52 @@
     font-size: 16px;
     border: none;
   } */
+  @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+/* 
+ .nav-container {
+  
+    font-family: 'Inconsolata', monospace;
+  
+}  */
+#brand{
+  font-size: 48px;
+  font-family: 'Inconsolata', monospace;
+}
+
+#sitesearch {
+  margin-right: 250px;
+
+}
+#nav1{
+  color:rgb(111, 111, 117);
+  font-size: 20px;
+  font-family: 'Inconsolata', monospace;
+  padding: 15px;
+
+}
+#nav2{
+  color:rgb(111, 111, 117);
+  font-size: 19px;
+  font-family: 'Inconsolata', monospace;
+  padding: 15px;
+
+}
+#navlink{
+  color:rgb(111, 111, 117);
+  font-size: 16px;
+  font-family: 'Inconsolata', monospace;
+
+}
+#homelink{
+  color:rgb(111, 111, 117);
+  font-size: 20px;
+  font-family: 'Inconsolata', monospace;
+  padding: 15px;
+
+}
+#inputsearch{
+  width: 500px;
+}
   .dropdown {
     position: relative;
     display: inline-block;
@@ -35,4 +81,13 @@
   .dropdown:hover .dropdown-content {display: block;}
   
   .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+  .searchbox{
+    padding-right: 200px;
+  }
+  #sitesearch {
+    width: 250px !important;
+    position: relative;
+    right: 0;
+}
   
