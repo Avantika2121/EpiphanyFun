@@ -1,9 +1,27 @@
 
 
-<div *ngFor="let activity of activities" >
-    <div *ngIf="activity.id===1">
+<div *ngFor="let activity of activities; index as i" >
+    <div *ngIf="activity.category.id===1">
 <div>Name: {{activity.name}}</div>
 <div>Details: {{activity.description}}</div>
 </div>
 </div>
 
+<div>
+<br>
+<button class="btn btn-secondary submitbtn" (click)="toggleShow()" type="checkbox">Click to post outdoor activity!</button>
+<div *ngIf="isShown"  id="divshow" >
+    <br>
+    <div>
+        <input  type="text" placeholder="Post Activity" />
+        <input type='submit' value='Add Post' >
+</div>
+<br>
+<div>
+    <textarea type="text" placeholder="description"></textarea>
+</div>
+<br>
+<button class="btn btn-secondary" type="submit">Submit Post</button>
+
+</div>
+</div>

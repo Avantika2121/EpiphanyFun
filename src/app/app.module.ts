@@ -20,7 +20,7 @@ import { IndooractivityComponent } from './indooractivity/indooractivity.compone
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
     
   ],
   providers: [],

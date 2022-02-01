@@ -1,7 +1,7 @@
 
 
-<div *ngFor="let activity of activities" >
-    <div *ngIf="activity.id===2">
+<div *ngFor="let activity of activities; index as i" >
+    <div *ngIf="activity.category.id===2">
 <div>Name: {{activity.name}}</div>
 <div>Details: {{activity.description}}</div>
 </div>

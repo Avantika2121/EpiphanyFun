@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ActivityService } from '../activity.service';
 import { Activity } from '../activity';
 
+
+
 @Component({
   selector: 'app-indooractivity',
   templateUrl: './indooractivity.component.html',
