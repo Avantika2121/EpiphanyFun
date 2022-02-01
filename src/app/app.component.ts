@@ -1,6 +1,7 @@
 
 import { Component, OnInit } from '@angular/core';
 import { HomepageComponent } from './homepage/homepage.component';
+import { Router } from '@angular/router';
 
 
 
@@ -13,8 +14,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 export class AppComponent  {
   title = 'EpiphanyFun';
   
-  
-  constructor() {}
+  constructor(public router: Router) {}
 
   ngOnInit() {
 
