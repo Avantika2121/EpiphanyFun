@@ -6,13 +6,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomepageComponent } from './homepage/homepage.component';
 import { ActivitypageComponent } from './activitypage/activitypage.component';
 import { ActivityComponent } from './activity/activity.component';
+import { IndooractivityComponent } from './indooractivity/indooractivity.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomepageComponent,
     ActivitypageComponent,
-    ActivityComponent
+    ActivityComponent,
+    IndooractivityComponent
  
   ],
   imports: [

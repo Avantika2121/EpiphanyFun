@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomepageComponent } from './homepage/homepage.component';
 import { ActivitypageComponent } from './activitypage/activitypage.component';
 import { ActivityComponent } from './activity/activity.component';
+import { IndooractivityComponent } from './indooractivity/indooractivity.component';
 
 const routes: Routes = [
      {
@@ -16,6 +17,10 @@ const routes: Routes = [
     {
         path: 'activity',
         component: ActivityComponent,
+    },
+    {
+        path: 'indooractivity',
+        component: IndooractivityComponent,
     },
 ]
 @NgModule({
