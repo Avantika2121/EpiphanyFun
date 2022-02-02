@@ -12,6 +12,11 @@ import { Activity } from '../activity';
 export class IndooractivityComponent implements OnInit {
 
   activities: any;
+  isShown: boolean = false;
+  name = "";
+  description = "";
+
+  activity!: Activity;
 
   constructor(private activityService: ActivityService) { }
 
@@ -19,5 +24,14 @@ export class IndooractivityComponent implements OnInit {
     this.activityService.getActivity().subscribe(data=>{
       this.activities =data;
     })
+  }
+  postIndoorActivity(name: any, description: any): void{
+    console.log(name, description);
+    this.activityService.
+  postIndoorActivity(name, description).subscribe(activity => this.activity = activity);
+  }
+  
+  toggleShow() {
+    this.isShown = ! this.isShown;
   }
 }

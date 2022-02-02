@@ -6,3 +6,18 @@
 <div>Details: {{activity.description}}</div>
 </div>
 </div>
+<div>
+    <br>
+    <button class="btn btn-secondary submitbtn" (click)="toggleShow()" type="checkbox">Click to post indoor activity!</button>
+    <div class="text-secondary" *ngIf="isShown"  id="divshow" >
+    <br>
+    
+        <input class="text-secondary" type="text" [(ngModel)]="name" placeholder="name" />
+    <br><br>
+        <textarea class="text-secondary" type="text" [(ngModel)]="description" placeholder="description"></textarea>
+    
+    <br>
+    <button class="btn btn-secondary" type='submit' (click) = "postIndoorActivity(name, description)" value='Add Post'>Submit Post</button>
+    
+    </div>
+    </div>

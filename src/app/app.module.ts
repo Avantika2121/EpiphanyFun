@@ -8,6 +8,7 @@ import { ActivitypageComponent } from './activitypage/activitypage.component';
 import { ActivityComponent } from './activity/activity.component';
 import { IndooractivityComponent } from './indooractivity/indooractivity.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { WeatherComponent } from './weather/weather.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HomepageComponent,
     ActivitypageComponent,
     ActivityComponent,
-    IndooractivityComponent
+    IndooractivityComponent,
+    WeatherComponent
  
   ],
   imports: [

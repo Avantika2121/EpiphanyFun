@@ -1,5 +1,5 @@
 
-
+<div>
 <div class="text-secondary" *ngFor="let activity of activities; index as i" >
     <div *ngIf="activity.category.id===1">
 <div>Name: {{activity.name}}</div>
@@ -20,5 +20,6 @@
 <br>
 <button class="btn btn-secondary" type='submit' (click) = "postActivity(name, description)" value='Add Post'>Submit Post</button>
 
+</div>
 </div>
 </div>

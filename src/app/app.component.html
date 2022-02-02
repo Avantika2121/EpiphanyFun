@@ -1,3 +1,4 @@
+
 <div class="nav-container">
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
@@ -36,15 +37,35 @@
            
             </div>
           </div>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" routerLink="/" id="nav2">Want to Post a fun activity?</a> 
-          </li> 
-          
+          </li>  -->
+          <div class="dropdown" ngbDropdown class="nav-item dropdown" >
+            <a  class="nav-link dropdown-toggle" id="navbarDropdown"
+            role="button" ngbDropdownToggle aria-haspopup="true" aria-expanded="false" id="nav1">Post a fun activity!</a>
+            <div class="dropdown-content" >
+              <a  routerLink="/" id="navlink">Post an indoor activity</a>
+              <a  routerLink="/" id="navlink">Post an outdoor activity</a>
+            </div>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-nav me-auto mb-2 mb-lg-0">
+              <div class="nav-item">
+                <a class="nav-link active" aria-current="page" routerLink="/" id="nav3">Check the weather
+                  <img class="imgweather" src="/assets/images/weather.png" />
+                  </a>
+                  
+              </div>
+            </div>
+            </div>
+
       </ul>
-      <form class="d-flex" id="sitesearch" >
+      <!-- <form class="d-flex" id="sitesearch" >
         <input class="form-control me-2" type="search" placeholder="Search for activities" aria-label="Search" id="inputsearch">
         <button class="btn btn-outline-success" type="submit" >Search</button>
-      </form>
+      </form> -->
+
+
 
     </div>
   </div>

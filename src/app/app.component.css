@@ -45,6 +45,16 @@
   padding: 15px;
 
 }
+
+#nav3{
+  color:rgb(111, 111, 117);
+  font-size: 20px;
+  font-family: 'Inconsolata', monospace;
+  
+  margin-left: 330px;
+
+}
+
 #navlink{
   color:rgb(111, 111, 117);
   font-size: 16px;
@@ -96,4 +106,4 @@
     position: relative;
     right: 0;
 }
-  
+ 

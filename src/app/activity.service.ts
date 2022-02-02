@@ -12,6 +12,7 @@ export class ActivityService {
 
   private baseUrl = "http://localhost:2512/api/activity/";
   private postUrl = "http://localhost:2512/api/category/outdoor/activity";
+  private postindoorUrl = "http://localhost:2512/api/category/indoor/activity";
 
 
 
@@ -24,5 +25,9 @@ export class ActivityService {
   postActivity(name: any, description: any): Observable<Activity>{
     console.log(name, description);
     return this.http.post<Activity>(`${this.postUrl}`, {name: name, description:description});
+  }
+  postIndoorActivity(name: any, description: any): Observable<Activity>{
+    console.log(name, description);
+    return this.http.post<Activity>(`${this.postindoorUrl}`, {name: name, description:description});
   }
 }
