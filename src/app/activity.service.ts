@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Activity } from './activity';
 import { IndooractivityComponent } from './indooractivity/indooractivity.component';
+import { ActivatedRoute } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
@@ -10,15 +11,18 @@ import { IndooractivityComponent } from './indooractivity/indooractivity.compone
 export class ActivityService {
 
   private baseUrl = "http://localhost:2512/api/activity/";
-  private postUrl = "http://localhost:2512/api/category/indoor/activity";
+  private postUrl = "http://localhost:2512/api/category/outdoor/activity";
 
-  constructor(private http: HttpClient) { }
+
+
+  constructor(private route: ActivatedRoute, private http: HttpClient) { }
 
   getActivity(){
     return this.http.get(`${this.baseUrl}`);
   }
 
-  postActivity(activity: Activity): Observable<Activity>{
-    return this.http.post<Activity>(`${this.postUrl}`, activity);
+  postActivity(name: any, description: any): Observable<Activity>{
+    console.log(name, description);
+    return this.http.post<Activity>(`${this.postUrl}`, {name: name, description:description});
   }
 }

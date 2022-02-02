@@ -29,9 +29,10 @@ export class ActivityComponent implements OnInit {
       this.activities =data;
     })
   }
-  postActivity(activity: Activity): void{
+  postActivity(name: any, description: any): void{
+    console.log(name, description);
     this.activityService.
-  postActivity(this.activity).subscribe(activity => this.activity = activity);
+  postActivity(name, description).subscribe(activity => this.activity = activity);
   }
   
   toggleShow() {

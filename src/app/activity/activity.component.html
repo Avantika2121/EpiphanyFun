@@ -1,6 +1,6 @@
 
 
-<div *ngFor="let activity of activities; index as i" >
+<div class="text-secondary" *ngFor="let activity of activities; index as i" >
     <div *ngIf="activity.category.id===1">
 <div>Name: {{activity.name}}</div>
 <div>Details: {{activity.description}}</div>
@@ -10,15 +10,15 @@
 <div>
 <br>
 <button class="btn btn-secondary submitbtn" (click)="toggleShow()" type="checkbox">Click to post outdoor activity!</button>
-<div *ngIf="isShown"  id="divshow" >
+<div class="text-secondary" *ngIf="isShown"  id="divshow" >
 <br>
-  
-    <input  type="text" [(ngModel)]="name" placeholder="name" />
+
+    <input class="text-secondary" type="text" [(ngModel)]="name" placeholder="name" />
 <br><br>
-    <textarea type="text" [(ngModel)]="description" placeholder="description"></textarea>
+    <textarea class="text-secondary" type="text" [(ngModel)]="description" placeholder="description"></textarea>
 
 <br>
-<button class="btn btn-secondary" type='submit' (click) = "postActivity(activity)" value='Add Post'>Submit Post</button>
+<button class="btn btn-secondary" type='submit' (click) = "postActivity(name, description)" value='Add Post'>Submit Post</button>
 
 </div>
 </div>
