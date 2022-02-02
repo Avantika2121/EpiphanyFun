@@ -3,6 +3,8 @@ import { ActivityService } from '../activity.service';
 import { Activity } from '../activity';
 
 
+
+
 @Component({
   selector: 'app-activity',
   templateUrl: './activity.component.html',
@@ -16,6 +18,8 @@ export class ActivityComponent implements OnInit {
   activities: any;
   isShown: boolean = false;
   name = "";
+  description = "";
+
   activity!: Activity;
 
   constructor(private activityService: ActivityService) { }
@@ -27,7 +31,7 @@ export class ActivityComponent implements OnInit {
   }
   postActivity(activity: Activity): void{
     this.activityService.
-  postActivity(this.activities).subscribe(activity => this.activity = activity);
+  postActivity(this.activity).subscribe(activity => this.activity = activity);
   }
   
   toggleShow() {

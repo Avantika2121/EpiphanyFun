@@ -11,17 +11,14 @@
 <br>
 <button class="btn btn-secondary submitbtn" (click)="toggleShow()" type="checkbox">Click to post outdoor activity!</button>
 <div *ngIf="isShown"  id="divshow" >
-    <br>
-    <div>
-        <input  type="text" placeholder="Post Activity" />
-        <input type='submit' value='Add Post' >
-</div>
 <br>
-<div>
-    <textarea type="text" placeholder="description"></textarea>
-</div>
+  
+    <input  type="text" [(ngModel)]="name" placeholder="name" />
+<br><br>
+    <textarea type="text" [(ngModel)]="description" placeholder="description"></textarea>
+
 <br>
-<button class="btn btn-secondary" type="submit">Submit Post</button>
+<button class="btn btn-secondary" type='submit' (click) = "postActivity(activity)" value='Add Post'>Submit Post</button>
 
 </div>
 </div>

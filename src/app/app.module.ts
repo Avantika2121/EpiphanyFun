@@ -7,6 +7,8 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { ActivitypageComponent } from './activitypage/activitypage.component';
 import { ActivityComponent } from './activity/activity.component';
 import { IndooractivityComponent } from './indooractivity/indooractivity.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -21,6 +23,10 @@ import { IndooractivityComponent } from './indooractivity/indooractivity.compone
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+    
+ 
     
   ],
   providers: [],
