@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 import { Activity } from './activity';
 import { IndooractivityComponent } from './indooractivity/indooractivity.component';
 import { ActivatedRoute } from '@angular/router';
+import { ActivitypageComponent } from './activitypage/activitypage.component';
 
 @Injectable({
   providedIn: 'root'

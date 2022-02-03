@@ -6,8 +6,8 @@
 
 .wholepage{
     display: grid;
-    grid-template-columns: 1fr 0.25fr 3fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 2.5fr 0.2fr 3.2fr;
+    grid-template-rows: 0.5fr 3fr ;
 
     font-family: 'Inconsolata', monospace;
 }
@@ -29,8 +29,20 @@
     grid-row: 1;
     grid-column: 3;
     width: 650px;
+    height: 450px;
+    margin-left: 100px;
 }
 .activity{
-    grid-column: 3;
-    grid-row: 1;
+    grid-column: 1;
+    grid-row: 2;
+    color:rgb(83, 82, 97);
+    font-size: larger;
+    
+}
+h2{
+    text-decoration: underline overline dotted gray;
+
+}
+.h4{
+    text-decoration: underline overline wavy pink;
 }

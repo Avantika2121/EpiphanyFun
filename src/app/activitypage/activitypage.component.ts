@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular//common/http';
-//import { Router } from '@angular/router';
+import { ActivityService } from '../activity.service';
+import { Activity } from '../activity';
+
 
 @Component({
   selector: 'app-activitypage',
@@ -9,22 +11,18 @@ import { HttpClient } from '@angular//common/http';
 })
 export class ActivitypageComponent implements OnInit {
 
- 
+  activities: any;
+  isShown: boolean = false;
+  name = "";
+  description = "";
 
-  constructor(){}
+  activity!: Activity;
+
+  constructor(private activityService: ActivityService) { }
 
   ngOnInit(): void {
-    // this.http.get(`https://localhost:2512/api/activity/`).subscribe((response) => {
-    //   console.log(response);
-    //   this.activity = response;
-    //       });
+    this.activityService.getActivity().subscribe(data=>{
+      this.activities =data;
+    })
   }
-  // getAllActivity(): void {
-  //   this.http.get(`https://localhost:2512/api/activity/`).subscribe((response) => {
-  //     console.log(response);
-  //     this.activity = response;
-  //         });
-  //   }
-
-  }
-
+}

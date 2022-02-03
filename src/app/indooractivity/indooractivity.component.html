@@ -1,13 +1,18 @@
-
-
-<div *ngFor="let activity of activities; index as i" >
+<div class="wholepage">
+    <div class="para">
+<div class="text-secondary " *ngFor="let activity of activities; index as i" >
     <div *ngIf="activity.category.id===2">
 <div>Name: {{activity.name}}</div>
+<br>
 <div>Details: {{activity.description}}</div>
+<br><br>
 </div>
 </div>
-<div>
-    <br>
+</div>
+
+<img class="image" src="/assets/images/readabook.png" />
+
+    <div class="activity">
     <button class="btn btn-secondary submitbtn" (click)="toggleShow()" type="checkbox">Click to post indoor activity!</button>
     <div class="text-secondary" *ngIf="isShown"  id="divshow" >
     <br>
@@ -17,7 +22,9 @@
         <textarea class="text-secondary" type="text" [(ngModel)]="description" placeholder="description"></textarea>
     
     <br>
-    <button class="btn btn-secondary" type='submit' (click) = "postIndoorActivity(name, description)" value='Add Post'>Submit Post</button>
+    <button class="btn btn-secondary" type='submit' 
+    (click) = "postIndoorActivity(name, description)" value='Add Post'>Submit Post</button>
     
     </div>
     </div>
+</div>

@@ -1,0 +1,19 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+
+   
+
+ .wholepage{
+    
+     font-family: 'Inconsolata', monospace;
+     margin-left: 20px;
+     margin-top: 20px;
+     color:rgb(83, 82, 97);
+     font-style: italic;
+ }
+
+h2{
+    text-decoration: underline overline dotted gray;
+
+}

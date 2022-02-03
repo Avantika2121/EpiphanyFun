@@ -1,25 +1,32 @@
 
-<div>
-<div class="text-secondary" *ngFor="let activity of activities; index as i" >
+<div class="wholepage">
+<div class="para">
+<div class="text-secondary " *ngFor="let activity of activities; index as i" >
     <div *ngIf="activity.category.id===1">
 <div>Name: {{activity.name}}</div>
+<br>
 <div>Details: {{activity.description}}</div>
-</div>
-</div>
-
-<div>
-<br>
-<button class="btn btn-secondary submitbtn" (click)="toggleShow()" type="checkbox">Click to post outdoor activity!</button>
-<div class="text-secondary" *ngIf="isShown"  id="divshow" >
-<br>
-
-    <input class="text-secondary" type="text" [(ngModel)]="name" placeholder="name" />
 <br><br>
-    <textarea class="text-secondary" type="text" [(ngModel)]="description" placeholder="description"></textarea>
-
-<br>
-<button class="btn btn-secondary" type='submit' (click) = "postActivity(name, description)" value='Add Post'>Submit Post</button>
-
 </div>
 </div>
+</div>
+
+<img class="image" src="/assets/images/snowangel.jpeg" />
+
+<div class="activity">
+    <br>
+    <button class="btn btn-secondary submitbtn" (click)="toggleShow()" type="checkbox">Click to post outdoor activity!</button>
+    <div class="text-secondary" *ngIf="isShown"  id="divshow" >
+    <br>
+    
+        <input class="text-secondary" type="text" [(ngModel)]="name" placeholder="name" />
+    <br><br>
+        <textarea class="text-secondary" type="text" [(ngModel)]="description" placeholder="description"></textarea>
+    
+    <br>
+    <button class="btn btn-secondary" type='submit' 
+    (click) = "postActivity(name, description)" value='Add Post'>Submit Post</button>
+    
+    </div>
+    </div>
 </div>

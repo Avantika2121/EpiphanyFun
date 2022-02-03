@@ -1,0 +1,51 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+
+
+   
+
+ .wholepage{
+     display: grid;
+     grid-template-columns: 2.5fr 0.2fr 3.2fr;
+     grid-template-rows: 1fr 0.5fr 2fr ;
+ 
+     font-family: 'Inconsolata', monospace;
+ }
+ 
+ .para{
+     grid-column: 1;
+     grid-row: 1;
+     margin-top: 20px;
+     /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+     'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+     font-weight: 300;
+     font-size: larger;
+     font-style: italic;
+     color:rgb(83, 82, 97);
+  
+ }
+ 
+ .image{
+     grid-row: 1;
+     grid-column: 3;
+     width: 650px;
+     height: 450px;
+     margin-left: 100px;
+ }
+ .activity{
+     grid-column: 3;
+     grid-row: 1;
+     margin-top: 530px;
+     margin-left: 100px;
+     color:rgb(83, 82, 97);
+     font-size: larger;
+     
+ }
+ h2{
+     text-decoration: underline overline dotted gray;
+ 
+ }
+ .h4{
+     text-decoration: underline overline wavy pink;
+ }
