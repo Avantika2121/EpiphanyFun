@@ -11,9 +11,9 @@ import { ActivitypageComponent } from './activitypage/activitypage.component';
 })
 export class ActivityService {
 
-  private baseUrl = "https://epiphany-fun-backend.herokuapp.com/api/activity/";
-  private postUrl = "https://epiphany-fun-backend.herokuapp.com/api/category/outdoor/activity";
-  private postindoorUrl = "https://epiphany-fun-backend.herokuapp.com/api/category/indoor/activity";
+  private baseUrl = "http://epiphany-fun-backend.herokuapp.com/api/activity/";
+  private postUrl = "http://epiphany-fun-backend.herokuapp.com/api/category/outdoor/activity";
+  private postindoorUrl = "http://epiphany-fun-backend.herokuapp.com/api/category/indoor/activity";
 
 
 
