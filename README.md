@@ -32,7 +32,7 @@ In the front-end development, testing back-end APIs to ensure the data is being 
 
 #### Sprint 3
 
-***All Activities Page
+***All Activities Page***
 
 **A user should be able to:**
 
@@ -41,7 +41,7 @@ In the front-end development, testing back-end APIs to ensure the data is being 
   * The list of all the activities in the database and any that are shared by user
   * An beautiful photo of family activity.
 
-***Outdoor Activity page
+***Outdoor Activity page***
 
 **A user should be able to:**
 
@@ -57,7 +57,7 @@ Testing to check the data is being accurately posted to back-end database when u
 #### Sprint 4
 
 
-***Outdoor Activity page
+***Outdoor Activity page***
 
 **A user should be able to:**
 
