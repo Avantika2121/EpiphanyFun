@@ -10,6 +10,7 @@ https://epiphany-fun-frontend.herokuapp.com/
 ## Devlopment Process
 The process for this project was based on Agile methodologies. We had daily stand-ups with our leader/instructor to discuss what we achieved the day before, the plan for today and any hurdles. I developed this project in 5 Sprints.
 
+
 ### User Stories and Backend development
 
 
@@ -19,7 +20,7 @@ Developing the backend of this project components in Spring/Rest APIs to talk wi
 
 #### Sprint 2 
 
-### Landing Page
+##### Landing Page
 
 **A user should be able to:**
 
@@ -31,7 +32,7 @@ In the front-end development, testing back-end APIs to ensure the data is being 
 
 #### Sprint 3
 
-### All Activities Page
+##### All Activities Page
 
 **A user should be able to:**
 
@@ -40,7 +41,7 @@ In the front-end development, testing back-end APIs to ensure the data is being 
   * The list of all the activities in the database and any that are shared by user
   * An beautiful photo of family activity.
 
-### Outdoor Activity page
+##### Outdoor Activity page
 
 **A user should be able to:**
 
@@ -56,7 +57,7 @@ Testing to check the data is being accurately posted to back-end database when u
 #### Sprint 4
 
 
-### Outdoor Activity page
+##### Outdoor Activity page
 
 **A user should be able to:**
 
@@ -74,5 +75,5 @@ Testing to check the data is being accurately posted to back-end database when u
 2. Deployment of front-end and back-end on Heroku.
 
 
-
+### ERD
 
