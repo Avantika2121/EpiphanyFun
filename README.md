@@ -77,3 +77,14 @@ Testing to check the data is being accurately posted to back-end database when u
 
 ### ERD
 
+![IMG_3718](https://user-images.githubusercontent.com/94148009/152540742-1e339478-86e1-4d32-895a-096dcd4f4d69.PNG)
+
+
+**USER END POINTS**
+
+|     Method    |   Endpoints                                   | Detail                           |
+| ------------- | -----------------------------------           |--------------------------------- | 
+|       POST    | api/category/{categoryName}/activity             | creates new activity outdoor or indoor based on category name                |
+|       GET     | api/category/activity/             | returns JSON all activities           |
+|       GET     | api/category/{categoryName}/activity    | returns JSON for activities of specific category name        |
+
