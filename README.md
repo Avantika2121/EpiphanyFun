@@ -1,5 +1,5 @@
 # Epiphany-Fun
-EpiphanyFun app Front-end Angular/TypeScript/HTML/CSS/Bootstrap
+EpiphanyFun app 
 
 ## Project Description
 “Epiphany-Fun!” is a website that gives you ideas on what to do when you don’t know what to do. With Covid being around and not being able to socially meet-up we all are out of ideas of what to do to to kill boredom and keep the little ones busy. You can choose whether you want to know some indoor activities or outdoor ones. You can even post your own ideas for others to see!
@@ -72,7 +72,8 @@ Testing to check the data is being accurately posted to back-end database when u
 #### Sprint 5
 
 1. Calling external weather Api for user to be able to check weather.
-2. Deployment of front-end and back-end on Heroku.
+2. A final touch to CSS and overall look of the app.
+3. Deployment of front-end and back-end on Heroku.
 
 
 ### ERD
@@ -87,4 +88,24 @@ Testing to check the data is being accurately posted to back-end database when u
 |       POST    | api/category/{categoryName}/activity             | creates new activity outdoor or indoor based on category name                |
 |       GET     | api/category/activity/             | returns JSON all activities           |
 |       GET     | api/category/{categoryName}/activity    | returns JSON for activities of specific category name        |
+
+****Technologies Used****
+1. Java
+2. Spring Framework (Data-Rest, Data-JPA)
+3. Postman
+4. PostgreSQL
+5. Angular/TypeScript
+6. HTML/CSS/Bootstrap
+7. Git
+
+**BONUS**
+
+1) Deployed to Heroku
+
+**Hurdles**
+
+1. Debugging my posting data from front-end to make it work. I learnt a great deal how they work in full-Stack app.
+2. Deploying to Heroku did take time to configure back-end and front-end for deployment while i was trying to fix errors. My googling skills came handy.
+
+
 
