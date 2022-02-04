@@ -4,6 +4,9 @@ EpiphanyFun app
 ## Project Description
 “Epiphany-Fun!” is a website that gives you ideas on what to do when you don’t know what to do. With Covid being around and not being able to socially meet-up we all are out of ideas of what to do to to kill boredom and keep the little ones busy. You can choose whether you want to know some indoor activities or outdoor ones. You can even post your own ideas for others to see!
 
+## Google Slides
+https://docs.google.com/presentation/d/1cNQFRe2sJtL403xOEMr9HOT-RzfzDbrIV7-eLLzmpFs/edit?usp=sharing
+
 ## Deployed Site
 https://epiphany-fun-frontend.herokuapp.com/
 
